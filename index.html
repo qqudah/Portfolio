@@ -31,12 +31,40 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experince" onclick="toggleMenu()">Experince</a></li>
-          <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#certificates"onclick="toggleMenu()">Certiciates</a></li>
-          <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li>
+            <a href="#certificates" onclick="toggleMenu()">Certiciates</a>
+          </li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
+
+    <section id="profile">
+      <div class="section_text">
+        <p>Hi, I'm</p>
+        <h1 class="title">Mohannad Al-Qudah</h1>
+        <p class="section_text2">Backend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            download CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="window.location.href='./#contact'"
+          >
+            Contact me
+          </button>
+        </div>
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/mohannad-al-qudah-2224b12b6/'"">
+            <img src="./assets/github.png" alt="linkedin" class="icon" onclick="location.href='https://github.com/qqudah'">
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
