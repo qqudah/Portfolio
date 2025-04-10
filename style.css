@@ -248,6 +248,9 @@ section {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: left;
+  opacity: 0;
+  transform: translateX(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .left-card {
@@ -269,6 +272,12 @@ section {
   font-size: 1rem;
 }
 
+.card-icon {
+  width: 100px; /* Reduced size slightly */
+  height: auto;
+  margin-top: 10px;
+}
+
 @media (max-width: 768px) {
   .card {
     text-align: center;
@@ -278,6 +287,40 @@ section {
 
 #about {
   margin-top: -120px; /* Adjusted to raise the section slightly upwards */
+}
+
+/* Animation for sliding in from the left */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animation for sliding in from the right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Left card animation */
+.card.left-card.visible {
+  animation: slideInLeft 0.5s forwards;
+}
+
+/* Right card animation */
+.card.right-card.visible {
+  animation: slideInRight 0.5s forwards;
 }
 
 
