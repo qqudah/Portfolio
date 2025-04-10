@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueres.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav id="desktop-navbar">
@@ -13,10 +14,12 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experince">Experince</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#certificates">Certiciates</a></li>
+          <li><a href="#Languages and Tools">Languages and Tools</a></li>
+          <li><a href="#certificates">Certificates</a></li>
           <li><a href="#contact">Contact</a></li>
+       
         </ul>
       </div>
     </nav>
@@ -30,10 +33,11 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experince" onclick="toggleMenu()">Experince</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#Languages and Tools">Languages and Tools</a></li>
           <li>
-            <a href="#certificates" onclick="toggleMenu()">Certiciates</a>
+            <a href="#certificates" onclick="toggleMenu()">Certificates</a>
           </li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -76,21 +80,34 @@
       <div class="section_text">
         <h1 class="title">About me</h1>
         <p class="section_text2">
-          Senior software Enginnering student intrested in Backend Developemnt
-          and cloud currenlty pursuing AWS cloud practioner and studying
+          Senior software Engineering student interested in Backend Development
+          and cloud currently pursuing AWS cloud practitioner and studying
           spring-boot
         </p>
       </div>
     </section>
 
-    <section id="experince">
+    <section id="experience">
       <h1 class="title">Experience</h1>
       <div class="experince-cards-container">
-        <div class="card left-card">
+        <div
+          class="card left-card"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-offset="50"
+        >
           <h2 class="card-title">Back-End Development</h2>
-          <img src="./assets/Ilinix.png" alt="Experience Icon" class="card-icon" />
-          <p class="card-text">Experience in building robust server-side applications using Node.js, Express, and Spring Boot.</p>
+          <img
+            src="./assets/Ilinix.png"
+            alt="Experience Icon"
+            class="card-icon"
+          />
+          <p class="card-text">
+            Experience in building robust server-side applications using
+            Node.js, Express, and Spring Boot.
+          </p>
         </div>
+      </div>
         <!-- 
         <div class="card right-card">
           <h2 class="card-title">Cloud Development</h2>
@@ -101,10 +118,140 @@
       </div>
     </section>
 
-    <style>
-      /* Removed inline CSS for the 'Experience' section */
-    </style>
+    <section id="projects">
+      <p class="section_text">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="0">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container"
+          data-aos="fade-up"
+     data-aos-duration="800"
+     data-aos-delay="200">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container" data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="400">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Languages and Tools" class="fade-in">
+      <p class="section_text">Languages and Tools</p>
+      <p align="center">
+        <img
+          src="https://skillicons.dev/icons?i=java,spring,dotnet,cs,html"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        />
+        <img
+          src="https://skillicons.dev/icons?i=css,postgresql,mysql,aws,postman"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        />
+      </p>
+    </section>
+
+    <section id="contact">
+      <p class="section_text">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:mohannadqqudah@gmail.com.com">Example@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
