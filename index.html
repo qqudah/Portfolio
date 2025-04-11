@@ -48,11 +48,11 @@
       <div class="section_text">
         <p style="font-size: 25px">Hello, I'm</p>
         <h1 class="title">Mohannad Al-Qudah</h1>
-        <p class="section_text2">Backend Developer</p>
+        <p class="section_text2" ><span id="changing-text"></span>Developer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/MohannadCVlatest.pdf')"
           >
             download CV
           </button>
@@ -91,10 +91,8 @@
       <h1 class="title">Experience</h1>
       <div class="experince-cards-container">
         <div
-          class="card left-card"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-offset="50"
+        data-aos="fade-right"
+        data-aos-duration="1000"
         >
           <h2 class="card-title">Back-End Development</h2>
           <img
@@ -129,16 +127,16 @@
           data-aos-delay="0">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
+                src="./assets/List_it.png"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">List_it</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/qqudah/List_It'"
               >
                 Github
               </button>
@@ -223,6 +221,43 @@
       </p>
     </section>
 
+<section id="certificates">
+  <div class="timeline">
+    <div class="timeline-item left">
+        <div class="certificate" class="card left-card"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-offset="50">
+            <h3>IBM Back-End Development Specialization (Coursera,IBM)</h3>
+            <a href="https://coursera.org/share/dacfef26ebdfa4f5178463caa15775f3" target="_blank" class="cert-link-text">
+              Click to view credentials
+          </a>
+            
+        </div>
+        <span class="year"data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-offset="50">2024</span>
+    </div>
+    <div class="timeline-item right">
+        <div class="certificate" class="card left-card"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-offset="50">
+            <h3>OOP in java Specialization (duke&UC san diego University,Coursera) </h3>
+            <a href="https://coursera.org/share/6fa81efdcbf2c470858fadcf925d7ed5" target="_blank" class="cert-link-text">
+              Click to view credentials
+          </a>
+        </div>
+        <span class="year" data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-offset="50">2025</span>
+    </div>
+    <!-- Add more items here -->
+</div>
+</section>
+
+
+
     <section id="contact">
       <p class="section_text">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -252,6 +287,7 @@
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
       AOS.init();
+      once: true 
     </script>
   </body>
 </html>

@@ -433,3 +433,119 @@ article .icon {
   height: 2.5rem;
 }
 
+#changing-text::after {
+  content: '|';
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* certifcates */
+
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  border-left: 2px solid #333;
+  transform: translateX(-50%); /* Ensure the line is perfectly centered */
+}
+
+.timeline-item {
+  position: relative;
+  width: 45%; /* Slightly reduce the width to add spacing */
+  padding: 10px;
+  margin-bottom: 20px; /* Add some space between items */
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.timeline-item .certificate {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.timeline-item .year {
+  position: absolute;
+  top: 0;
+  font-weight: bold;
+  color: #555;
+}
+
+.timeline-item.left .year {
+  left: -30px;
+}
+
+.timeline-item.right .year {
+  right: -30px;
+}
+
+.timeline-item.left .certificate {
+  margin-left: 40px;
+}
+
+.timeline-item.right .certificate {
+  margin-right: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .timeline-item.left, .timeline-item.right {
+      width: 90%; /* Allow more space on smaller screens */
+      margin: 10px auto; /* Center the items on mobile */
+      left: 0; /* Remove the left positioning for stacked items */
+  }
+
+  .timeline-item.left {
+      margin-left: 0; /* Remove left margin for mobile */
+  }
+
+  .timeline-item.right {
+      margin-right: 0; /* Remove right margin for mobile */
+  }
+
+  .timeline:before {
+      left: 10px; /* Adjust vertical line position for smaller screens */
+  }
+
+  /* Center the year text for mobile */
+  .timeline-item .year {
+      position: static;
+      text-align: center;
+      margin-top: 10px;
+  }
+
+  .timeline-item .certificate {
+      margin-left: 0; /* Remove left margin for better alignment */
+      margin-right: 0; /* Remove right margin for better alignment */
+      box-shadow: none; /* Optional: Remove box shadow for a cleaner look on mobile */
+  }
+}
+.certificate-img {
+  width: 40px; /* Adjust size as needed */
+  height: auto;
+  display: block;
+  margin-top: 15px;
+  margin-left: auto; /* Pushes image to the right */
+}
