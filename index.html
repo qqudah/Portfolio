@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueres.css" />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
   </head>
   <body>
     <nav id="desktop-navbar">
-      <div class="logo">Mohannad Al-Qudah</div>
+      
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -24,7 +25,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Mohannad Al-Qudah</div>
+      <div class="logo"></div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -35,7 +36,7 @@
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#Languages and Tools">Languages and Tools</a></li>
+          <li><a href="#Languages and Tools"onclick="toggleMenu()">Languages and Tools</a></li>
           <li>
             <a href="#certificates" onclick="toggleMenu()">Certificates</a>
           </li>
@@ -65,12 +66,12 @@
         </div>
         <div id="socials-container">
           <img src="./assets/linkedin.png" alt="linkedin" class="icon"
-          onclick="location.href='https://www.linkedin.com/in/mohannad-al-qudah-2224b12b6/'"">
+          onclick="window.open('https://www.linkedin.com/in/mohannad-al-qudah-2224b12b6/', '_blank', 'noopener,noreferrer')">
           <img
             src="./assets/github.png"
             alt="linkedin"
             class="icon"
-            onclick="location.href='https://github.com/qqudah'"
+            onclick="window.open('https://github.com/qqudah', '_blank', 'noopener,noreferrer')"
           />
         </div>
       </div>
@@ -206,7 +207,7 @@
     </section>
 
     <section id="Languages and Tools" class="fade-in">
-      <p class="section_text">Languages and Tools</p>
+      <h1 class="section_text">Languages and Tools</h1>
       <p align="center">
         <img
           src="https://skillicons.dev/icons?i=java,spring,dotnet,cs,html"
@@ -222,33 +223,31 @@
     </section>
 
 <section id="certificates">
+  <p class="section_text" style="font-size: 30px;">Certificates</p>
   <div class="timeline">
     <div class="timeline-item left">
-        <div class="certificate" class="card left-card"
+      <a href="https://coursera.org/share/dacfef26ebdfa4f5178463caa15775f3" target="_blank" class="certificate card left-card" id="hover-card"
         data-aos="fade-left"
         data-aos-duration="1000"
         data-aos-offset="50">
-            <h3>IBM Back-End Development Specialization (Coursera,IBM)</h3>
-            <a href="https://coursera.org/share/dacfef26ebdfa4f5178463caa15775f3" target="_blank" class="cert-link-text">
-              Click to view credentials
-          </a>
-            
-        </div>
-        <span class="year"data-aos="fade-left"
+        <h3>IBM Back-End Development Specialization (Coursera, IBM)</h3>
+        <p class="cert-link-text">click to view credentials</p>
+      </a>
+      <span class="year"
+        data-aos="fade-left"
         data-aos-duration="1000"
         data-aos-offset="50">2024</span>
     </div>
     <div class="timeline-item right">
-        <div class="certificate" class="card left-card"
+      <a href="https://coursera.org/share/6fa81efdcbf2c470858fadcf925d7ed5" target="_blank" class="certificate card right-card" id="hover-card"
         data-aos="fade-right"
         data-aos-duration="1000"
         data-aos-offset="50">
-            <h3>OOP in java Specialization (duke&UC san diego University,Coursera) </h3>
-            <a href="https://coursera.org/share/6fa81efdcbf2c470858fadcf925d7ed5" target="_blank" class="cert-link-text">
-              Click to view credentials
-          </a>
-        </div>
-        <span class="year" data-aos="fade-right"
+        <h3>OOP in Java Specialization (Duke & UC San Diego, Coursera)</h3>
+        <p class="cert-link-text">click to view credentials</p>
+      </a>
+      <span class="year"
+        data-aos="fade-right"
         data-aos-duration="1000"
         data-aos-offset="50">2025</span>
     </div>
