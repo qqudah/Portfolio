@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueres.css" />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
   </head>
   <body>
     <nav id="desktop-navbar">
@@ -66,12 +65,12 @@
         </div>
         <div id="socials-container">
           <img src="./assets/linkedin.png" alt="linkedin" class="icon"
-          onclick="window.open('https://www.linkedin.com/in/mohannad-al-qudah-2224b12b6/', '_blank', 'noopener,noreferrer')">
+          onclick="location.href='https://www.linkedin.com/in/mohannad-al-qudah-2224b12b6/'"">
           <img
             src="./assets/github.png"
             alt="linkedin"
             class="icon"
-            onclick="window.open('https://github.com/qqudah', '_blank', 'noopener,noreferrer')"
+            onclick="location.href='https://github.com/qqudah'"
           />
         </div>
       </div>
@@ -87,35 +86,38 @@
         </p>
       </div>
     </section>
-
     <section id="experience">
       <h1 class="title">Experience</h1>
-      <div class="experince-cards-container">
-        <div
-        data-aos="fade-right"
-        data-aos-duration="1000"
-        >
-          <h2 class="card-title">Back-End Development</h2>
+    
+      <div class="experience-cards-container">
+        <!-- Left Card -->
+        <div class="card left-card" data-aos="fade-right" data-aos-duration="1000">
+          <h2 class="card-title">Cloud associate architect</h2>
           <img
             src="./assets/Ilinix.png"
             alt="Experience Icon"
             class="card-icon"
           />
           <p class="card-text">
-            Experience in building robust server-side applications using
-            Node.js, Express, and Spring Boot.
+            Learned fundamentals of Cloud computing and AWS services.
+          </p>
+        </div>
+    
+        <!-- Right Card -->
+        <div class="card right-card" data-aos="fade-left" data-aos-duration="1000">
+          <h2 class="card-title">Software Engineering Intern</h2>
+          <img
+            src="./assets/unrwalogo.png"
+            alt="Experience Icon"
+            class="card-icon"
+          />
+          <p class="card-text">
+            Built applications on Power Platform, specifically Power Apps and Power Automate.
           </p>
         </div>
       </div>
-        <!-- 
-        <div class="card right-card">
-          <h2 class="card-title">Cloud Development</h2>
-          <img src="./assets/experience.png" alt="Experience Icon" class="card-icon" />
-          <p class="card-text">Proficient in deploying and managing cloud-based solutions using AWS and Azure.</p>
-        </div>
-       Un Comment when u get more experince -->
-      </div>
     </section>
+    
 
     <section id="projects">
       <p class="section_text">Browse My Recent</p>
@@ -207,7 +209,7 @@
     </section>
 
     <section id="Languages and Tools" class="fade-in">
-      <h1 class="section_text">Languages and Tools</h1>
+      <p class="section_text">Languages and Tools</p>
       <p align="center">
         <img
           src="https://skillicons.dev/icons?i=java,spring,dotnet,cs,html"
@@ -223,31 +225,34 @@
     </section>
 
 <section id="certificates">
-  <p class="section_text" style="font-size: 30px;">Certificates</p>
+  <p class="section_text">Certificates</p>
   <div class="timeline">
     <div class="timeline-item left">
-      <a href="https://coursera.org/share/dacfef26ebdfa4f5178463caa15775f3" target="_blank" class="certificate card left-card" id="hover-card"
+        <div class="certificate" class="card left-card"
         data-aos="fade-left"
         data-aos-duration="1000"
         data-aos-offset="50">
-        <h3>IBM Back-End Development Specialization (Coursera, IBM)</h3>
-        <p class="cert-link-text">click to view credentials</p>
-      </a>
-      <span class="year"
-        data-aos="fade-left"
+            <h3>IBM Back-End Development Specialization (Coursera,IBM)</h3>
+            <a href="https://coursera.org/share/dacfef26ebdfa4f5178463caa15775f3" target="_blank" class="cert-link-text">
+              Click to view credentials
+          </a>
+            
+        </div>
+        <span class="year"data-aos="fade-left"
         data-aos-duration="1000"
         data-aos-offset="50">2024</span>
     </div>
     <div class="timeline-item right">
-      <a href="https://coursera.org/share/6fa81efdcbf2c470858fadcf925d7ed5" target="_blank" class="certificate card right-card" id="hover-card"
+        <div class="certificate" class="card left-card"
         data-aos="fade-right"
         data-aos-duration="1000"
         data-aos-offset="50">
-        <h3>OOP in Java Specialization (Duke & UC San Diego, Coursera)</h3>
-        <p class="cert-link-text">click to view credentials</p>
-      </a>
-      <span class="year"
-        data-aos="fade-right"
+            <h3>OOP in java Specialization (duke&UC san diego University,Coursera) </h3>
+            <a href="https://coursera.org/share/6fa81efdcbf2c470858fadcf925d7ed5" target="_blank" class="cert-link-text">
+              Click to view credentials
+          </a>
+        </div>
+        <span class="year" data-aos="fade-right"
         data-aos-duration="1000"
         data-aos-offset="50">2025</span>
     </div>

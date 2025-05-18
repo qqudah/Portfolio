@@ -226,20 +226,20 @@ section {
   .btn-container{gap: 1rem;}
 
 /*Experience Section*/
-#experince {
+#experience {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px; /* Increased padding for more space */
+  padding: 40px 20px;
   text-align: center;
 }
 
-.experince-cards-container {
+.experience-cards-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 100%;
-  max-width: 800px;
+  max-width: 800px; /* Increased from 100px */
 }
 
 .card {
@@ -251,16 +251,20 @@ section {
   opacity: 0;
   transform: translateX(0);
   transition: opacity 0.5s ease, transform 0.5s ease;
+
+  width: 600px;         /* Fixed width */
+  max-width: 100%;      /* Responsive fallback */
+  box-sizing: border-box;
 }
 
 .left-card {
   align-self: flex-start;
-  margin-left: -120px; /* Shifted slightly more to the left */
+  margin-left: -40px; /* Shifted slightly to the left */
 }
 
 .right-card {
   align-self: flex-end;
-  margin-right: -120px; /* Shifted slightly more to the right */
+  margin-right: -40px; /* Shifted slightly to the right */
 }
 
 .card-title {
@@ -273,22 +277,23 @@ section {
 }
 
 .card-icon {
-  width: 100px; /* Reduced size slightly */
+  width: 100px;
   height: auto;
   margin-top: 10px;
+  object-fit: contain;  /* Ensures image scales properly */
 }
 
 @media (max-width: 768px) {
   .card {
     text-align: center;
     align-self: center !important;
+    margin: 0 !important;
   }
 }
 
 #about {
-  margin-top: -120px; /* Adjusted to raise the section slightly upwards */
+  margin-top: -120px;
 }
-
 
 
 /* Animation for sliding in from the right */
